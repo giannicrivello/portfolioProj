@@ -1,5 +1,10 @@
+
+/* color pallet scheme */
+/*https://coolors.co/palette/2b2c2b-2f3d44-80fff9-fdf6e3-e83c45*/
+
 .container {
   padding: 0 2rem;
+  background: #FDF6E3;
 }
 
 .main {
@@ -15,30 +20,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 60px
+  margin-left: 60px;
+  padding-bottom: 15vh; 
 }
 .footingContainer a {
 	margin-right: 30px;
 }
 
-.footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-}
 
 .title a {
-  color: #0070f3;
+  color: #e83c45;
   text-decoration: none;
 }
 
@@ -59,7 +50,7 @@
 	content: "";
 	width: 5px;
 	height: 75px;
-	background: #ec7fff;
+	background: black;
 	display: inline-block;
 	animation: cursor-blink 1.5s steps(2) infinite;
 }
@@ -79,7 +70,20 @@
   margin: 4rem 0;
   line-height: 1.5;
   font-size: 1.5rem;
+  color: #2f3d44;
 }
+
+.description a {
+  color: #2f3d44;
+  text-decoration: none;
+}
+
+.description a:hover,
+.description a:focus,
+.description a:active {
+  text-decoration: underline;
+}
+
 .borderCircle {
 	border-radius: 9999px;
 }
@@ -100,53 +104,7 @@
     Bitstream Vera Sans Mono, Courier New, monospace;
   font-size: 4rem;
 }
-
-.grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
-}
-
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
-}
-
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
-}
-
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
-}
-
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
-}
-
 .logo {
   height: 1em;
   margin-left: 0.5rem;
-}
-
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
 }
